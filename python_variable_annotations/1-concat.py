@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Function  takes a string str1 and a string str2 as arguments 
+Function  takes a string str1 and a string str2 as arguments
 and returns a concatenated string
 """
 
+
 def concat(str1: str, str2: str) -> str:
-	"""concatenate 2 strings"""
-	return (str1 + str2)
+    """concatenate 2 strings"""
+    return (str1 + str2)
