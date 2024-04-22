@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 async routine that takes in 2 int args n and max_delay
 spawn wait_random() <n> times with <max_delay>
