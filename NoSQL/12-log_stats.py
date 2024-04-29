@@ -9,16 +9,16 @@ def get_log_stats(nginx_collection):
     """print stat about Nginx logs"""
 
     total_logs = nginx_collection.count_documents({})
-    print("{} logs".format(total_logs))
+    print(f"{total_logs} logs")
 
     print("Methods:")
     for method in METHODS:
         count = nginx_collection.count_documents({"method": method})
-        print(" method {}: {}".format(method, count))
+        print(f"    method {method}: {count}")
 
     status_checks = nginx_collection.count_documents(
         {"method": "GET", "path": "/status"})
-    print("{} status check".format(status_checks))
+    print(f"{status_checks} status check")
 
 
 if __name__ == "__main__":
