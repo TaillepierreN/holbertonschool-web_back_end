@@ -23,5 +23,6 @@ def get_log_stats(nginx_collection):
 
 
 if __name__ == "__main__":
+    """main function"""
     nginx = pymongo.MongoClient('mongodb://127.0.0.1:27017').logs.nginx
     get_log_stats(nginx)
